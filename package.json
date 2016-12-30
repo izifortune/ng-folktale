@@ -1,18 +1,16 @@
 {
   "name": "ng-folktale",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "A collection of folktale data structures and other utilities for functional programming all wrapped into AngularJS service.",
-  "keywords": ["AngularJS", "Functional"],
-  "author": {
-    "name": "Fabrizio Fortunato",
-    "email": "fortune@cortesconta.net",
-    "url": "https://izifortune.com"
-  },
+  "keywords": [
+    "AngularJS",
+    "Functional"
+  ],
+  "author": "",
   "main": "dist/ng-folktale.min.js",
   "scripts": {
     "prepublish": "webpack"
   },
-  "author": "",
   "license": "ISC",
   "babel": {
     "presets": [
