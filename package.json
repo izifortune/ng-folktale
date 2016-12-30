@@ -1,6 +1,6 @@
 {
   "name": "ng-folktale",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "A collection of folktale data structures and other utilities for functional programming all wrapped into AngularJS service.",
   "keywords": [
     "AngularJS",
