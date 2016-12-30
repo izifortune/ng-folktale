@@ -96,4 +96,16 @@ ngFolktale.tryCatch(() => a.testing); //Left(error)
 ngFolktale.tryCatch(() => a.b); // Right(1)
 ```
 
+####$http(arguments)
+
+A version of AngularJS `$http` which is already wrapped into *futurizeP*.
+
+***Arguments:***
+
+* `arguments` *Object*, all the arguments needed for the AngularJs `$http` 
+
+***Returns***
+
+`Task` of the $http call.
+
 Inspired by https://egghead.io/courses/professor-frisby-introduces-composable-functional-javascript.

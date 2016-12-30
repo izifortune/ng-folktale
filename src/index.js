@@ -8,14 +8,18 @@ import angular from 'angular';
 import Box from './box';
 
 angular.module('ng-folktale', [])
-.service('ngFolktale', function Folktale() {
+.service('ngFolktale', ['$http', function Folktale($http) {
   this.Task = Task;
   this.Either = Either;
   this.Maybe = Maybe;
   this.Box = Box;
 
+
   this.futurize = futurize;
   this.futurizeP = futurizeP;
+
+  this.futureP = this.futurizeP(this.Task);
+  this.future = this.futurize(this.Task);
 
   this.tryCatch = f => {
     try {
@@ -31,4 +35,8 @@ angular.module('ng-folktale', [])
     }
     return this.Either.Left(null);
   };
-});
+
+  this.$http = args => this.futureP($http)(args);
+
+  this.getData = obj => obj.data;
+}]);
